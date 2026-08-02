@@ -37,7 +37,9 @@ Zulip	👕 T-shirt	Medium
 GoFr	👕 T-shirt + Stickers	Medium
 Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.
+## Support
 
+⭐ Star this repo if you find it useful!
 License
 MIT License - see LICENSE for details.
 
