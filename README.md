@@ -6,10 +6,6 @@ CLI tool to find open source contribution opportunities and swag programs.
 
 ```bash
 pip install ossfind
-Usage
-Find good first issues
-# Find all good first issues
-ossfind find
 
 # Filter by language
 ossfind find --language python
