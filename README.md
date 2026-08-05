@@ -1,3 +1,5 @@
+# ossfind 
+
 🚀 Stop searching GitHub manually.
 Find beginner-friendly open source issues and contributor programs from your terminal.
 
