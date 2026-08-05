@@ -11,6 +11,22 @@ Find beginner-friendly open source issues and contributor programs from your ter
 -  Discover open source swag programs
 -  Lightweight terminal-based workflow
 
+## Contributing
+
+Contributions are welcome!
+
+You can help by:
+- Adding new swag programs
+- Improving issue discovery
+- Fixing bugs
+- Improving documentation
+
+Steps:
+1. Fork this repository
+2. Create a branch
+3. Make your changes
+4. Submit a Pull Request
+
 ## Installation
 
 ```bash
