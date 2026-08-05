@@ -1,5 +1,5 @@
 ---
-Name: Feature request
+name: Feature request
 about: Suggest an idea or improvement for ossfind
 title: ''
 labels: enhancement
