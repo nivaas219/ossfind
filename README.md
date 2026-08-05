@@ -37,13 +37,13 @@ ossfind swag --difficulty easy
 ossfind swag --difficulty medium
 ossfind swag --difficulty hard
 Swag Programs 🎁
-Company	Swag	Difficulty
-Mattermost	| Custom Mug	Easy
-Kong	| T-shirt	Medium
-QuestDB	| T-shirt	Medium
-Hacktoberfest	| T-shirt	Easy
-Zulip	| T-shirt	Medium
-GoFr	| T-shirt + Stickers	Medium
+Company       |	Swag	    | Difficulty
+Mattermost    | Custom Mug|	Easy
+Kong	        | T-shirt	  | Medium
+QuestDB     	| T-shirt	  | Medium
+Hacktoberfest	| T-shirt	  | Easy
+Zulip	        | T-shirt	  | Medium
+GoFr	        | T-shirt + Stickers | Medium
 Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.
 ## Support
