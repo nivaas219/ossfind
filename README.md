@@ -66,6 +66,10 @@ Steps:
 3. Make your changes
 4. Submit a Pull Request
 
+## Contributors ⭐
+
+Thanks to everyone who helps improve ossfind!
+
 ## Support
 
 ⭐ Star this repo if you find it useful!
