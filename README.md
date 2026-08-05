@@ -1,6 +1,5 @@
-# ossfind 🔍
-
-CLI tool to find open source contribution opportunities and swag programs.
+🚀 Stop searching GitHub manually.
+Find beginner-friendly open source issues and contributor programs from your terminal.
 
 ## Installation
 
