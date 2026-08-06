@@ -1,5 +1,5 @@
 import sys
-
+from auth import github_login
 from github_api import search_repositories, get_user
 
 
@@ -20,6 +20,15 @@ def main():
 
 
     command = sys.argv[1]
+
+    if command == "login":
+
+        token = github_login()
+
+        if token:
+            print("Login completed successfully")
+        else:
+            print("Login failed")
 
 
     if command == "search":
