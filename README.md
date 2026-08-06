@@ -1,15 +1,13 @@
-<p align="center">
-  <img src="assets/logo.png" width="200">
-</p>
+
 # ossfind 
 
-# OSSIND
+# OSSFIND
 
 <p align="center">
-  <img src="assets/logo.png" alt="OSSIND Logo" width="200">
+  <img src="assets/logo.png" alt="OSSFIND Logo" width="200">
 </p>
 
-## About OSSIND
+## About OSSFIND
 
 OSSIND is a free and open-source platform designed to help developers discover open-source projects, find beginner-friendly issues, track contributions, build portfolios, and grow within the open-source ecosystem.
 
@@ -27,7 +25,7 @@ To make open-source contribution easier, more accessible, and rewarding for ever
 - Contributor Leaderboards
 - Desktop Application
 
-## Who is OSSIND for?
+## Who is OSSFIND for?
 
 - Students
 - First-time Contributors
@@ -37,7 +35,7 @@ To make open-source contribution easier, more accessible, and rewarding for ever
 
 ## Community
 
-Join discussions, suggest features, and help improve OSSIND.
+Join discussions, suggest features, and help improve OSSFIND.
 
 Every contribution matters.
 
@@ -46,11 +44,11 @@ Every contribution matters.
 
 Thanks to everyone who helps improve ossfind!
 
-## Why OSSIND?
+## Why OSSFIND?
 
 Many developers want to contribute to open source but struggle to find projects, issues, mentors, and opportunities.
 
-OSSIND aims to bridge that gap by providing tools that make open-source contribution easier and more accessible.
+OSSFIND aims to bridge that gap by providing tools that make open-source contribution easier and more accessible.
 
 ## Support
 
