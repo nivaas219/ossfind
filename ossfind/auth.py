@@ -1,5 +1,6 @@
 import webbrowser
 import requests
+from token_storage import save_token
 from urllib.parse import urlencode
 
 from config import CLIENT_ID, CLIENT_SECRET
@@ -27,6 +28,7 @@ def github_login():
     token = get_access_token(code)
 
     if token:
+        save_token(token)
         print(" GitHub login successful")
         return token
 
