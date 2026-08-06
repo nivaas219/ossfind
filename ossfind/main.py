@@ -1,5 +1,7 @@
 import sys
 
+from github_api import search_repositories, get_user
+
 
 def show_banner():
     print("=" * 40)
@@ -13,28 +15,40 @@ def main():
     if len(sys.argv) < 2:
         print("Usage:")
         print("  ossfind search <keyword>")
-        print("  ossfind login")
-        print("  ossfind trending")
+        print("  ossfind user <username>")
         return
+
 
     command = sys.argv[1]
 
-    if command == "login":
-        print("GitHub login feature coming soon.")
 
-    elif command == "search":
-        if len(sys.argv) < 3:
-            print("Please provide a search keyword.")
-            return
+    if command == "search":
 
         keyword = sys.argv[2]
-        print(f"Searching open source projects for: {keyword}")
 
-    elif command == "trending":
-        print("Trending repositories feature coming soon.")
+        repos = search_repositories(keyword)
 
-    else:
-        print(f"Unknown command: {command}")
+        for index, repo in enumerate(repos, start=1):
+
+           print(f"{index}. {repo['full_name']}")
+           print("⭐ Stars:", repo["stargazers_count"])
+           print("Language:", repo["language"])
+           print("Description:", repo["description"])
+           print("URL:", repo["html_url"])
+           print("-" * 50)
+
+
+    elif command == "user":
+
+        username = sys.argv[2]
+
+        user = get_user(username)
+
+        if user:
+            print("Name:", user["name"])
+            print("Followers:", user["followers"])
+        else:
+            print("User not found")
 
 
 if __name__ == "__main__":
