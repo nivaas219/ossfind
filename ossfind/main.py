@@ -100,17 +100,17 @@ def main():
 
     elif command == "trending":
 
-      repos = get_trending_repositories()
+        repos = get_trending_repositories()
 
-    print("\n🔥 Trending Open Source Projects\n")
+        print("\n🔥 Trending Open Source Projects\n")
 
-    for index, repo in enumerate(repos, start=1):
+        for index, repo in enumerate(repos, start=1):
 
-        print(f"{index}. {repo['full_name']}")
-        print("⭐ Stars:", repo["stargazers_count"])
-        print("Language:", repo["language"])
-        print("URL:", repo["html_url"])
-        print("-" * 50)
+            print(f"{index}. {repo['full_name']}")
+            print("⭐ Stars:", repo["stargazers_count"])
+            print("Language:", repo["language"])
+            print("URL:", repo["html_url"])
+            print("-" * 50)
 
     else:
 
