@@ -8,7 +8,7 @@ We welcome contributions from everyone. Whether you are fixing bugs, improving d
 
 You can help by:
 
-- Adding new open source swag programs
+
 - Improving issue discovery
 - Fixing bugs
 - Improving documentation
