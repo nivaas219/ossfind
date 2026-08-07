@@ -6,6 +6,7 @@ on:
 
 permissions:
   pull-requests: write
+  issues: write
 
 jobs:
   welcome-contributor:
@@ -22,5 +23,7 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: context.issue.number,
-              body: `👋 Hi @${username}, thank you for opening this pull request to OSSFind!\n\nWe appreciate your effort. Our team will review it shortly. 🚀✨`
+              body: `Hi @${username}, thank you for opening this pull request to OSSFind!
+
+We appreciate your effort. Our team will review it shortly.`
             });
