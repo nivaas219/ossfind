@@ -44,11 +44,28 @@ def _request(url, headers=None, params=None):
         reset_header = response.headers.get("X-RateLimit-Reset")
         reset_note = ""
         if reset_header:
-            reset_time = datetime.fromtimestamp(int(reset_header)).strftime("%H:%M:%S")
-            reset_note = f" Try again after {reset_time}."
+            try:
+                reset_time = datetime.fromtimestamp(int(reset_header)).strftime("%H:%M:%S")
+                reset_note = f" Try again after {reset_time}."
+            except (ValueError, OverflowError, OSError):
+                pass
         raise RateLimitError(f"GitHub API rate limit exceeded.{reset_note}")
 
+    if response.status_code >= 400 and response.status_code != 404:
+        raise GitHubAPIError(
+            f"GitHub API request failed with status {response.status_code}: "
+            f"{_error_message(response)}"
+        )
+
     return response
+
+
+def _error_message(response):
+    try:
+        message = response.json().get("message")
+    except ValueError:
+        message = None
+    return message or response.reason or "unknown error"
 
 
 def get_user(username):
