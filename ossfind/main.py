@@ -5,7 +5,8 @@ from github_api import (
     search_repositories,
     get_user,
     get_authenticated_user,
-    get_trending_repositories
+    get_trending_repositories,
+    GitHubAPIError
 )
 from token_storage import load_token
  
@@ -50,7 +51,11 @@ def main():
 
         keyword = sys.argv[2]
 
-        repos = search_repositories(keyword)
+        try:
+            repos = search_repositories(keyword)
+        except GitHubAPIError as error:
+            print(f"Search failed: {error}")
+            return
 
         for index, repo in enumerate(repos, start=1):
 
@@ -70,7 +75,11 @@ def main():
 
         username = sys.argv[2]
 
-        user = get_user(username)
+        try:
+            user = get_user(username)
+        except GitHubAPIError as error:
+            print(f"Could not look up user: {error}")
+            return
 
         if user:
             print("Name:", user["name"])
@@ -87,7 +96,11 @@ def main():
             print("Please login first")
             return
 
-        user = get_authenticated_user(token)
+        try:
+            user = get_authenticated_user(token)
+        except GitHubAPIError as error:
+            print(f"Could not fetch account: {error}")
+            return
 
         if user:
             print("Name:", user["name"])
@@ -100,7 +113,11 @@ def main():
 
     elif command == "trending":
 
-        repos = get_trending_repositories()
+        try:
+            repos = get_trending_repositories()
+        except GitHubAPIError as error:
+            print(f"Could not fetch trending repositories: {error}")
+            return
 
         print("\n🔥 Trending Open Source Projects\n")
 
