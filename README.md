@@ -1,7 +1,7 @@
 
 # ossfind 
 
-# OSSFIND
+# OSSFINDk
 
 <p align="center">
   <img src="assets/logo.png" alt="OSSFIND Logo" width="200">
