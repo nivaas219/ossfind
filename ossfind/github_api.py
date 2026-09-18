@@ -62,7 +62,8 @@ def _request(url, headers=None, params=None):
 
 def _error_message(response):
     try:
-        message = response.json().get("message")
+        data = response.json()
+        message = data.get("message") if isinstance(data, dict) else None
     except ValueError:
         message = None
     return message or response.reason or "unknown error"
